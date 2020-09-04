@@ -1,0 +1,13 @@
+<VirtualHost mvcapp.local:80>
+    ServerAdmin mvcapp.local
+    DocumentRoot "/srv/http/mvc/public/"
+    ServerName mvcapp.local
+    ServerAlias www.mvcapp.local
+    ServerAlias mvcapp.local
+    <Directory "/srv/http/mvc/public/">
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
